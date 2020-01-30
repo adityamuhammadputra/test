@@ -4,9 +4,17 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
+import VueTyper from 'vue-typer'
+import axios from 'axios'
 
 Vue.use(router)
+Vue.use(VueTyper)
+
+Vue.prototype.$http = axios
+
 Vue.config.productionTip = false
+
+require('./assets/css/style.css')
 
 new Vue({
   router,
