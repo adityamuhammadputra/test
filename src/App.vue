@@ -29,11 +29,9 @@
       <v-toolbar-title>Bin S</v-toolbar-title>
 
       <v-spacer></v-spacer>
-      <v-toolbar dense fixed>
-        <v-btn text v-for="link in links" :key="link.title" router :to="link.route" class="my-2">
-          {{ link.title }}
-        </v-btn>
-      </v-toolbar>
+      <v-btn text v-for="link in links" :key="link.title" router :to="link.route" class="my-2">
+        {{ link.title }}
+      </v-btn>
       <v-btn icon>
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
@@ -44,9 +42,9 @@
       max-height="720"
     >
       <v-content id="scrolling-techniques-2"
-      class="overflow-y-auto"
-      max-height="720">
-        <router-view style="padding:120px 20px 20px;"></router-view>
+        class="overflow-y-auto"
+        max-height="720">
+        <router-view style="padding-top:120px"></router-view>
       </v-content>
       <Footer></Footer>
     </v-sheet>

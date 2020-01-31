@@ -15,6 +15,7 @@ Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 require('./assets/css/style.css')
+require('vue2-animate/dist/vue2-animate.min.css')
 
 new Vue({
   router,

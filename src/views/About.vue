@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about" style="padding:120px 20px 20px;">
+    <h1 class="animated fadeInLeft">Example</h1>
     <h1><vue-typer text='Hello World! I was registered locally!'></vue-typer></h1>
     <h1><vue-typer text='Hello World! I was registered locally!'></vue-typer></h1>
     <h1><vue-typer text='Hello World! I was registered locally!'></vue-typer></h1>
