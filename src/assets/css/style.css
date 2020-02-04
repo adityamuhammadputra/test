@@ -13,7 +13,7 @@ html{
     background-position: 100% 15% !important;
     background-attachment: fixed !important;
     background-size: cover !important;
-    background-image: url(https://picsum.photos/1920/1080?random);
+    background-image:  linear-gradient(to right top, rgba(182, 200, 210, 0.5), rgba(86, 107, 105, 0.8)),url(https://picsum.photos/1920/1080?random);
 }
 .home-banner-left h1{
     font-size: 7em;
@@ -26,15 +26,25 @@ html{
     color: aliceblue;
 }
 .home-banner-left h4 b{
-    color: black;
+    color: #81d9e0;
 }
+
+.vue-typer .custom.char.typed {
+  color: #81d9e0;
+}
+
+.vue-typer .custom.char.selected {
+  color: aliceblue;
+}
+
 
 .home-banner-left p {
     font-size: 1em;
     color: aliceblue;
+    text-align: justify;
 }
 .home-banner-left p b{
-    color: black;
+    color: #81d9e0;
 }
 
 /* phone */
