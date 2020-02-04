@@ -1,3 +1,72 @@
 html{
     overflow-y: hidden;
 }
+
+.auto-max-height{
+    max-height: 730px;
+}
+
+.v-image__image.v-image__image--cover{
+    background-position: 100% 12% !important;
+}
+.home-img-custom{
+    background-position: 100% 15% !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-image: url(https://picsum.photos/1920/1080?random);
+}
+.home-banner-left h1{
+    font-size: 7em;
+    font-weight: 400;
+    color: aliceblue;
+}
+.home-banner-left h4{
+    font-size: 2.5em;
+    font-weight: 300;
+    color: aliceblue;
+}
+.home-banner-left h4 b{
+    color: black;
+}
+
+.home-banner-left p {
+    font-size: 1em;
+    color: aliceblue;
+}
+.home-banner-left p b{
+    color: black;
+}
+
+/* phone */
+@media only screen and (max-width: 600px) {
+    .auto-max-height{
+        max-height: 530px;
+    }
+}
+
+/* tabs */
+@media only screen and (min-width: 600px) {
+    .auto-max-height{
+        max-height: 630px;
+    }
+}
+
+/* laptop */
+@media only screen and (min-width: 992px) {
+    .auto-max-height{
+        max-height: 730px;
+    }
+} 
+
+/* dekstop */
+@media only screen and (min-width: 1200px) {
+    .auto-max-height{
+        max-height: 670px;
+    }
+}
+
+@media only screen and (min-width: 1210px) {
+    .auto-max-height{
+        max-height: 730px;
+    }
+} 

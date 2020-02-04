@@ -7,6 +7,9 @@ import vuetify from './plugins/vuetify'
 import VueTyper from 'vue-typer'
 import axios from 'axios'
 
+import { myVar } from './assets/js/global.js'
+
+Vue.use(myVar)
 Vue.use(router)
 Vue.use(VueTyper)
 

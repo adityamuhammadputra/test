@@ -7,6 +7,7 @@
       shrink-on-scroll
       src="https://picsum.photos/1920/1080?random"
       scroll-target="#scrolling-techniques-2"
+      class="app-bar-img-bg-custom"
     >
       <template v-slot:img="{ props }">
         <v-img
@@ -38,14 +39,15 @@
     </v-app-bar>
      <v-sheet
       id="scrolling-techniques-2"
-      class="overflow-y-auto"
-      max-height="720"
-    >
-      <v-content id="scrolling-techniques-2"
-        class="overflow-y-auto"
-        max-height="720">
-        <router-view style="padding-top:120px"></router-view>
-      </v-content>
+      class="overflow-y-auto auto-max-height">
+        <v-skeleton-loader
+            v-if="myVar"
+            height="404"
+            type="list-item-two-line"
+            style="padding-top:120px"
+          >
+          </v-skeleton-loader>
+        <router-view style="padding-top:120px" v-else></router-view>
       <Footer></Footer>
     </v-sheet>
   </v-app>
@@ -61,6 +63,7 @@ export default {
   data () {
     return {
       drawer: false,
+      myVar: false,
       links: [
         { title: 'Home', route: '/' },
         { title: 'About', route: '/about' }
@@ -68,5 +71,4 @@ export default {
     }
   }
 }
-
 </script>

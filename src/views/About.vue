@@ -28,3 +28,12 @@
 
   </div>
 </template>
+<script>
+export default {
+  data () {
+    return {
+      myVar: false
+    }
+  }
+}
+</script>
